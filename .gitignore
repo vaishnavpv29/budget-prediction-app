@@ -1,0 +1,25 @@
+# Dependencies
+backend/node_modules/
+frontend/node_modules/
+sample-task/node_modules/
+
+# Environment files
+backend/.env
+frontend/.env
+sample-task/.env
+
+# Build files
+frontend/dist/
+backend/dist/
+sample-task/dist/
+
+# Logs
+*.log
+npm-debug.log*
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db

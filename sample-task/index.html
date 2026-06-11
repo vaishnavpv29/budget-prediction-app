@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ESTIMATRIX - Requirements & Scope</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f0f4ff; margin: 0; padding: 20px; }
+    .container { max-width: 800px; margin: auto; background: white; border-radius: 12px; padding: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    h1 { color: #1a56db; }
+    .badge { background: #1a56db; color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; }
+    table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+    th { background: #1a56db; color: white; padding: 10px; text-align: left; }
+    td { padding: 10px; border-bottom: 1px solid #e5e7eb; }
+    tr:hover { background: #f0f4ff; }
+    .status { padding: 3px 10px; border-radius: 20px; font-size: 0.8rem; font-weight: bold; }
+    .done { background: #d1fae5; color: #065f46; }
+    .progress { background: #dbeafe; color: #1e40af; }
+    .pending { background: #f3f4f6; color: #374151; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>📋 ESTIMATRIX Web Portal</h1>
+    <p><span class="badge">Arjun Sharma</span> &nbsp; Task: Requirements &amp; Scope Definition</p>
+
+    <h2>Project Requirements</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Requirement</th>
+          <th>Priority</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Admin login with role-based access</td>
+          <td>Critical</td>
+          <td><span class="status done">✓ Done</span></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Employee login and dashboard</td>
+          <td>Critical</td>
+          <td><span class="status done">✓ Done</span></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>AI cost and timeline prediction</td>
+          <td>High</td>
+          <td><span class="status done">✓ Done</span></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>GitHub commit tracking integration</td>
+          <td>High</td>
+          <td><span class="status progress">⏳ In Progress</span></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Weekly report submission</td>
+          <td>Medium</td>
+          <td><span class="status progress">⏳ In Progress</span></td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Risk analysis dashboard</td>
+          <td>Medium</td>
+          <td><span class="status pending">🕐 Pending</span></td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Historical data upload</td>
+          <td>Low</td>
+          <td><span class="status pending">🕐 Pending</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p style="margin-top:20px; color:#6b7280; font-size:0.85rem;">
+      Last updated: <strong id="date"></strong>
+    </p>
+  </div>
+  <script>
+    document.getElementById('date').textContent = new Date().toLocaleString();
+  </script>
+</body>
+</html>
